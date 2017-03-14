@@ -12,7 +12,7 @@ import org.slf4j.LoggerFactory;
  * 反射工具类
  * Created by liuyang on 17/3/14.
  */
-public class ReflectionUtil {
+public final class ReflectionUtil {
     private static final Logger LOGGER = LoggerFactory.getLogger(ReflectionUtil.class);
 
     /**

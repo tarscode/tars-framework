@@ -4,7 +4,7 @@ import org.apache.commons.lang3.StringUtils;
  * 字符串工具类
  * Created by liuyang on 17/3/14.
  */
-public class StringUtil {
+public final class StringUtil {
     /**
      * 字符串分隔符
      */

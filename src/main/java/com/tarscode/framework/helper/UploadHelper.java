@@ -26,6 +26,7 @@ import com.tarscode.framework.util.StringUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 /**
+ * 文件上传辅助类
  * Created by liuyang on 17/3/14.
  */
 public class UploadHelper {

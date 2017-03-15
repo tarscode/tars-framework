@@ -5,6 +5,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
+ * JSON工具类
  * Created by liuyang on 17/3/14.
  */
 public class JsonUtil {

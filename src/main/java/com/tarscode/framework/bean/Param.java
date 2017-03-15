@@ -14,6 +14,7 @@ import java.util.Map;
  * Created by liuyang on 17/3/14.
  */
 public class Param {
+
     private List<FormParam> formParamList;
 
     private List<FileParam> fileParamList;

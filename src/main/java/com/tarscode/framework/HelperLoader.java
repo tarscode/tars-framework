@@ -1,9 +1,6 @@
 package com.tarscode.framework;
 
-import com.tarscode.framework.helper.BeanHelper;
-import com.tarscode.framework.helper.ClassHelper;
-import com.tarscode.framework.helper.ControllerHelper;
-import com.tarscode.framework.helper.IoCHelper;
+import com.tarscode.framework.helper.*;
 import com.tarscode.framework.util.ClassUtil;
 
 /**
@@ -15,6 +12,7 @@ public class HelperLoader {
         Class<?>[] classList = {
                 ClassHelper.class,
                 BeanHelper.class,
+                AopHelper.class,
                 IoCHelper.class,
                 ControllerHelper.class
         };

@@ -25,6 +25,8 @@ import com.tarscode.framework.helper.UploadHelper;
 import com.tarscode.framework.util.JsonUtil;
 import com.tarscode.framework.util.ReflectionUtil;
 import com.tarscode.framework.util.StringUtil;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * 请求转发器
@@ -32,8 +34,10 @@ import com.tarscode.framework.util.StringUtil;
  */
 @WebServlet(urlPatterns = "/*", loadOnStartup = 0)
 public class DispatcherServlet extends HttpServlet{
+
     @Override
     public void init(ServletConfig servletConfig) throws ServletException {
+
         HelperLoader.init();
 
         ServletContext servletContext = servletConfig.getServletContext();
@@ -56,6 +60,7 @@ public class DispatcherServlet extends HttpServlet{
     @Override
     public void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         ServletHelper.init(request, response);
+
         try {
             String requestMethod = request.getMethod().toLowerCase();
             String requestPath = request.getPathInfo();
